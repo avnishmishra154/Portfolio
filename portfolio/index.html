@@ -10,63 +10,70 @@
 </head>
 <body>
 
-    <div class="background-animation" id="bg-animation"></div>
+    <div class="background-animation"></div>
 
-    <main class="grid-container">
+    <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode">
+        <i class="fa-solid fa-sun"></i>
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <main class="grid-container" id="cards-container">
         
         <div class="card profile-card">
-            <div class="profile-header">
-                <div class="status-badge"><div class="green-dot"></div>Available for hire</div>
-                <h1>Avnish Mishra</h1>
-                <h2>Python Developer & Full Stack Developer</h2>
-                <p>B.Sc IT Graduate combining academic knowledge with practical experience in building scalable web apps and RESTful APIs.</p>
-                <div class="location"><i class="fa-solid fa-location-dot"></i> Mumbai, India</div>
-            </div>
-            <div class="profile-actions">
-                <a href="mailto:avnishmishra154@gmail.com" class="btn-primary">Contact Me <i class="fa-solid fa-arrow-right"></i></a>
-                <a href="#" class="btn-secondary" title="Download Resume"><i class="fa-solid fa-download"></i> CV</a>
+            <div class="card-content">
+                <div class="profile-header">
+                    <div class="status-badge"><div class="green-dot"></div>Available for hire</div>
+                    <h1>Avnish Mishra</h1>
+                    <h2>Python Developer & Full Stack Developer</h2>
+                    <p>B.Sc IT Graduate combining academic knowledge with practical experience in building scalable web apps and RESTful APIs.</p>
+                    <div class="location"><i class="fa-solid fa-location-dot"></i> Mumbai, India</div>
+                </div>
+                <div class="profile-actions">
+                    <a href="mailto:avnishmishra154@gmail.com" class="btn-primary">Contact Me <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" class="btn-secondary" title="Download Resume"><i class="fa-solid fa-download"></i> CV</a>
+                </div>
             </div>
         </div>
 
         <div class="card skills-card">
-            <h3>Technical Skill</h3>    
-            <div class="skills-wrapper">
-                <div class="skill-tag"><i class="fa-brands fa-python"></i> Python</div>
-                <div class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</div>
-                <div class="skill-tag"><i class="fa-solid fa-server"></i> Django</div>             
-                <div class="skill-tag"><i class="fa-solid fa-bolt"></i> FastAPI</div>
-                <div class="skill-tag"><i class="fa-solid fa-database"></i> PostgreSQL</div>
-                <div class="skill-tag"><i class="fa-brands fa-aws"></i> AWS</div>
+            <div class="card-content">
+                <h3>Technical Skills</h3>    
+                <div class="skills-wrapper">
+                    <div class="skill-tag"><i class="fa-brands fa-python"></i> Python</div>
+                    <div class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</div>
+                    <div class="skill-tag"><i class="fa-solid fa-server"></i> Django</div>             
+                    <div class="skill-tag"><i class="fa-solid fa-bolt"></i> FastAPI</div>
+                    <div class="skill-tag"><i class="fa-solid fa-database"></i> PostgreSQL</div>
+                    <div class="skill-tag"><i class="fa-brands fa-aws"></i> AWS</div>
+                </div>
             </div>
         </div>
 
         <div class="card social-card">
-            <a href="https://github.com/avnishmishra154" target="_blank" class="social-link github">
-                <i class="fa-brands fa-github"></i>
-                <span>GitHub</span>
-            </a>
-            <a href="https://www.linkedin.com/in/avnishmishra154/" target="_blank" class="social-link linkedin">
-                <i class="fa-brands fa-linkedin"></i>
-                <span>LinkedIn</span>
-            </a>
-            <a href="tel:+919076393995" class="social-link phone">
-                <i class="fa-solid fa-phone"></i>
-                <span>Call</span>
-            </a>
+            <div class="card-content social-grid">
+                <a href="https://github.com/avnishmishra154" target="_blank" class="social-link github">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/avnishmishra154/" target="_blank" class="social-link linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="tel:+919076393995" class="social-link phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Call</span>
+                </a>
+            </div>
         </div>
 
         <div class="card project-card p1">
-            <div class="project-content">
+            <div class="card-content">
                 <div class="project-top">
-                    <h3>Project Management Platform</h3>
+                    <div class="icon-box"><i class="fa-solid fa-list-check"></i></div>
                     <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
+                <h3>Project Management Platform</h3>
                 <p>Real-time collaboration solution with WebSockets, Kanban boards, and analytics.</p>
-                <ul>
-                    <li><i class="fa-solid fa-check"></i> Real-time updates via WebSockets</li>
-                    <li><i class="fa-solid fa-check"></i> Role-based access control (RBAC)</li>
-                    <li><i class="fa-solid fa-check"></i> Productivity Analytics Dashboard</li>
-                </ul>
                 <div class="tags-container">
                     <span>Django REST</span><span>PostgreSQL</span>
                 </div>
@@ -74,17 +81,13 @@
         </div>
 
         <div class="card project-card p2">
-            <div class="project-content">
+            <div class="card-content">
                 <div class="project-top">
-                    <h3>Fitness & Nutrition Ecosystem</h3>
+                    <div class="icon-box"><i class="fa-solid fa-heart-pulse"></i></div>
                     <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
+                <h3>Fitness & Nutrition Ecosystem</h3>
                 <p>Comprehensive health platform with workout planning, nutrition tracking, and social features.</p>
-                <ul>
-                    <li><i class="fa-solid fa-check"></i> Personalized workout generator</li>
-                    <li><i class="fa-solid fa-check"></i> Calorie counting & Barcode scan</li>
-                    <li><i class="fa-solid fa-check"></i> PWA (Mobile First)</li>
-                </ul>
                 <div class="tags-container">
                     <span>PostgreSQL</span><span>FastAPI</span><span>Tailwind</span>
                 </div>
@@ -92,17 +95,19 @@
         </div>
 
         <div class="card edu-card">
-            <h3>Education & Achievements</h3>
-            <div class="edu-item">
-                <div class="year">2022-2025</div>
-                <h4>B.Sc Information Technology</h4>
-                <p>Mumbai University | <strong>CGPA: 8.5</strong></p>
-            </div>
-            <div class="edu-item award">
-                <i class="fa-solid fa-trophy"></i>
-                <div>
-                    <h4>Outstanding Leadership Award</h4>
-                    <p>Recognized for exemplary leadership skills.</p>
+            <div class="card-content">
+                <h3>Education & Achievements</h3>
+                <div class="edu-item">
+                    <div class="year">2022-2025</div>
+                    <h4>B.Sc Information Technology</h4>
+                    <p>Mumbai University | <strong>CGPA: 8.5</strong></p>
+                </div>
+                <div class="edu-item award">
+                    <div class="award-icon"><i class="fa-solid fa-trophy"></i></div>
+                    <div>
+                        <h4>Outstanding Leadership Award</h4>
+                        <p>Recognized for exemplary leadership skills.</p>
+                    </div>
                 </div>
             </div>
         </div>
