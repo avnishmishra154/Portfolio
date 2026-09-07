@@ -1,119 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avnish Mishra | Python Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avnish Mishra · Cloud Engineer</title>
+
+  <!-- External Libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <div class="background-animation"></div>
+  <div class="bg-glow"></div>
 
-    <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode">
-        <i class="fa-solid fa-sun"></i>
-        <i class="fa-solid fa-moon"></i>
-    </button>
+  <!-- Theme Toggle -->
+  <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+    <i class="fa-solid fa-sun"></i>
+    <i class="fa-solid fa-moon"></i>
+  </button>
 
-    <main class="grid-container" id="cards-container">
-        
-        <div class="card profile-card">
-            <div class="card-content">
-                <div class="profile-header">
-                    <div class="status-badge"><div class="green-dot"></div>Available for hire</div>
-                    <h1>Avnish Mishra</h1>
-                    <h2>Python Developer & Full Stack Developer</h2>
-                    <p>B.Sc IT Graduate combining academic knowledge with practical experience in building scalable web apps and RESTful APIs.</p>
-                    <div class="location"><i class="fa-solid fa-location-dot"></i> Mumbai, India</div>
-                </div>
-                <div class="profile-actions">
-                    <a href="mailto:avnishmishra154@gmail.com" class="btn-primary">Contact Me <i class="fa-solid fa-arrow-right"></i></a>
-                    <a href="#" class="btn-secondary" title="Download Resume"><i class="fa-solid fa-download"></i> CV</a>
-                </div>
-            </div>
+  <main class="grid" id="cardGrid">
+
+    <!-- ==================== PROFILE CARD ==================== -->
+    <div class="card profile-card">
+      <div class="card-content">
+        <div class="status-badge">
+          <span class="green-dot"></span> Open to work
+        </div>
+        <h1>Avnish Mishra</h1>
+        <h2>Cloud Engineer · Infrastructure & Automation</h2>
+        <p>
+          6+ months managing 70+ VMs in enterprise data centers. Skilled in VMware, Nutanix, 
+          Windows/Linux, AD, and cloud (AWS, Azure, GCP). Passionate about IaC and automation with Terraform.
+        </p>
+        <div class="location">
+          <i class="fa-solid fa-location-dot"></i> Mumbai, India
+        </div>
+        <div class="profile-actions">
+          <a href="mailto:avnishmishra154@gmail.com" class="btn-primary">
+            <i class="fa-regular fa-envelope"></i> Contact
+          </a>
+          <a href="#" class="btn-secondary">
+            <i class="fa-solid fa-file-pdf"></i> Resume
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== SKILLS CARD ==================== -->
+    <div class="card skills-card">
+      <div class="card-content">
+        <h3><i class="fa-solid fa-code" style="color:var(--accent);margin-right:8px;"></i>Core Skills</h3>
+        <div class="skill-tags">
+          <span class="skill-tag"><i class="fa-brands fa-aws"></i> AWS</span>
+          <span class="skill-tag"><i class="fa-brands fa-microsoft"></i> Azure</span>
+          <span class="skill-tag"><i class="fa-brands fa-google"></i> GCP</span>
+          <span class="skill-tag"><i class="fa-solid fa-server"></i> VMware / Nutanix</span>
+          <span class="skill-tag"><i class="fa-solid fa-terminal"></i> Linux (RHEL/Ubuntu)</span>
+          <span class="skill-tag"><i class="fa-solid fa-code"></i> Python / Bash</span>
+          <span class="skill-tag"><i class="fa-solid fa-infinity"></i> Terraform</span>
+          <span class="skill-tag"><i class="fa-solid fa-shield"></i> IAM / Security</span>
+          <span class="skill-tag"><i class="fa-solid fa-database"></i> MySQL / PostgreSQL</span>
+          <span class="skill-tag"><i class="fa-solid fa-chart-line"></i> Monitoring (Splunk/Nagios)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== SOCIAL CARD ==================== -->
+    <div class="card social-card">
+      <div class="card-content social-grid">
+        <a href="https://github.com/AvnishMishra154" target="_blank" class="social-link">
+          <i class="fa-brands fa-github"></i><span>GitHub</span>
+        </a>
+        <a href="https://linkedin.com/in/avnishmishra154" target="_blank" class="social-link">
+          <i class="fa-brands fa-linkedin"></i><span>LinkedIn</span>
+        </a>
+        <a href="tel:+919076393995" class="social-link">
+          <i class="fa-solid fa-phone"></i><span>Call</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- ==================== PROJECT 1 ==================== -->
+    <div class="card project-card">
+      <div class="card-content">
+        <div class="project-top">
+          <div class="icon-box"><i class="fa-solid fa-cloud"></i></div>
+          <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+        <h3>AWS Terraform Secure Webserver</h3>
+        <p>
+          IaC deployment of highly available web server on AWS with VPC, ALB, auto-scaling, 
+          IAM least‑privilege, and encrypted storage.
+        </p>
+        <div class="project-tags">
+          <span>Terraform</span>
+          <span>AWS (EC2, VPC, ALB)</span>
+          <span>IAM</span>
+          <span>Auto Scaling</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== PROJECT 2 ==================== -->
+    <div class="card project-card">
+      <div class="card-content">
+        <div class="project-top">
+          <div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+          <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+        <h3>Hybrid Cloud Automation</h3>
+        <p>
+          Automated VM provisioning and configuration management using Terraform &amp; Ansible 
+          across vSphere and AWS.
+        </p>
+        <div class="project-tags">
+          <span>Terraform</span>
+          <span>Ansible</span>
+          <span>vSphere</span>
+          <span>AWS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== EXPERIENCE CARD ==================== -->
+    <div class="card exp-card">
+      <div class="card-content">
+        <h3><i class="fa-solid fa-briefcase" style="color:var(--accent);margin-right:8px;"></i>Experience</h3>
+
+        <!-- Experience 1 -->
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="company">Megahertz Infotech Pvt. Ltd.</span>
+            <span class="date">Feb 2026 – Present</span>
+          </div>
+          <div class="exp-role">Infrastructure Support Engineer · Mumbai</div>
+          <ul class="exp-desc">
+            <li>Managed 70+ VMs on VMware/Nutanix with 99.9% uptime during Fortune 500 migration</li>
+            <li>Administered Active Directory for 500+ users with 100% SLA compliance</li>
+            <li>Supported Linux (RHEL, Ubuntu, SUSE) for service management and troubleshooting</li>
+            <li>Resolved TCP/IP, DNS, SSH issues to minimize application downtime</li>
+          </ul>
         </div>
 
-        <div class="card skills-card">
-            <div class="card-content">
-                <h3>Technical Skills</h3>    
-                <div class="skills-wrapper">
-                    <div class="skill-tag"><i class="fa-brands fa-python"></i> Python</div>
-                    <div class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</div>
-                    <div class="skill-tag"><i class="fa-solid fa-server"></i> Django</div>             
-                    <div class="skill-tag"><i class="fa-solid fa-bolt"></i> FastAPI</div>
-                    <div class="skill-tag"><i class="fa-solid fa-database"></i> PostgreSQL</div>
-                    <div class="skill-tag"><i class="fa-brands fa-aws"></i> AWS</div>
-                </div>
-            </div>
+        <!-- Experience 2 -->
+        <div class="exp-item" style="border-bottom: none; margin-bottom:0; padding-bottom:0;">
+          <div class="exp-header">
+            <span class="company">Digitide</span>
+            <span class="date">Dec 2025 – Feb 2026</span>
+          </div>
+          <div class="exp-role">Desktop Support Engineer · Mumbai</div>
+          <ul class="exp-desc">
+            <li>Provided desktop support for 200+ employees across hardware, software, and OS</li>
+            <li>Managed ServiceNow tickets maintaining 97% SLA adherence</li>
+            <li>Created knowledge base articles reducing resolution time by 20%</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== EDUCATION + CERTIFICATIONS ==================== -->
+    <div class="card edu-card">
+      <div class="card-content">
+        <h3><i class="fa-solid fa-graduation-cap" style="color:var(--accent);margin-right:8px;"></i>Education &amp; Certifications</h3>
+
+        <!-- Education -->
+        <div class="edu-item">
+          <div class="edu-row">
+            <span class="edu-degree">B.Sc. Information Technology</span>
+            <span class="cgpa">CGPA: 8.3/10</span>
+          </div>
+          <div class="edu-college">Shaheed Dunichand Kalani College, Mumbai University</div>
+          <div class="edu-year">2022 – 2025</div>
         </div>
 
-        <div class="card social-card">
-            <div class="card-content social-grid">
-                <a href="https://github.com/avnishmishra154" target="_blank" class="social-link github">
-                    <i class="fa-brands fa-github"></i>
-                    <span>GitHub</span>
-                </a>
-                <a href="https://www.linkedin.com/in/avnishmishra154/" target="_blank" class="social-link linkedin">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <span>LinkedIn</span>
-                </a>
-                <a href="tel:+919076393995" class="social-link phone">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>Call</span>
-                </a>
-            </div>
+        <!-- Certifications -->
+        <div style="margin-top: 0.2rem;">
+          <div class="cert-row">
+            <span class="cert-badge"><i class="fa-solid fa-certificate" style="color:var(--accent);"></i> AWS Certified Cloud Practitioner</span>
+            <span class="cert-badge"><i class="fa-solid fa-certificate" style="color:var(--accent);"></i> Google Cloud Fundamentals</span>
+            <span class="cert-badge"><i class="fa-regular fa-lightbulb"></i> Generative AI</span>
+          </div>
+          <div class="cert-row" style="margin-top:0.4rem;">
+            <span class="cert-badge"><i class="fa-regular fa-clock"></i> Rotational shifts</span>
+            <span class="cert-badge"><i class="fa-regular fa-comment"></i> English · Hindi · Marathi</span>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div class="card project-card p1">
-            <div class="card-content">
-                <div class="project-top">
-                    <div class="icon-box"><i class="fa-solid fa-list-check"></i></div>
-                    <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <h3>Project Management Platform</h3>
-                <p>Real-time collaboration solution with WebSockets, Kanban boards, and analytics.</p>
-                <div class="tags-container">
-                    <span>Django REST</span><span>PostgreSQL</span>
-                </div>
-            </div>
-        </div>
+  </main>
 
-        <div class="card project-card p2">
-            <div class="card-content">
-                <div class="project-top">
-                    <div class="icon-box"><i class="fa-solid fa-heart-pulse"></i></div>
-                    <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <h3>Fitness & Nutrition Ecosystem</h3>
-                <p>Comprehensive health platform with workout planning, nutrition tracking, and social features.</p>
-                <div class="tags-container">
-                    <span>PostgreSQL</span><span>FastAPI</span><span>Tailwind</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card edu-card">
-            <div class="card-content">
-                <h3>Education & Achievements</h3>
-                <div class="edu-item">
-                    <div class="year">2022-2025</div>
-                    <h4>B.Sc Information Technology</h4>
-                    <p>Mumbai University | <strong>CGPA: 8.5</strong></p>
-                </div>
-                <div class="edu-item award">
-                    <div class="award-icon"><i class="fa-solid fa-trophy"></i></div>
-                    <div>
-                        <h4>Outstanding Leadership Award</h4>
-                        <p>Recognized for exemplary leadership skills.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </main>
-
-    <script src="script.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
