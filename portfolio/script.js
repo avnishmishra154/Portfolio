@@ -2,7 +2,7 @@
   'use strict';
 
   // ============================================================
-  // SPOTLIGHT EFFECT
+  // SPOTLIGHT EFFECT (Mouse-follow glow on cards)
   // ============================================================
   const grid = document.getElementById('cardGrid');
   const cards = document.querySelectorAll('.card');
@@ -31,10 +31,27 @@
     body.classList.add('light-mode');
   }
 
-  toggle.addEventListener('click', function() {
-    body.classList.toggle('light-mode');
-    const currentTheme = body.classList.contains('light-mode') ? 'light' : 'dark';
-    localStorage.setItem('theme', currentTheme);
+  if (toggle) {
+    toggle.addEventListener('click', function() {
+      body.classList.toggle('light-mode');
+      const currentTheme = body.classList.contains('light-mode') ? 'light' : 'dark';
+      localStorage.setItem('theme', currentTheme);
+    });
+  }
+
+  // ============================================================
+  // FADE-IN ON LOAD (Card entrance animation)
+  // ============================================================
+  window.addEventListener('load', () => {
+    cards.forEach((card, index) => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(20px)';
+      card.style.transition = `opacity 0.6s ease ${index * 0.08}s, transform 0.6s ease ${index * 0.08}s`;
+      requestAnimationFrame(() => {
+        card.style.opacity = '1';
+        card.style.transform = 'translateY(0)';
+      });
+    });
   });
 
 })();
