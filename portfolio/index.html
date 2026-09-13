@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Avnish Mishra · Cloud Engineer</title>
+  <title>Avnish Mishra · Cyber Security Analyst</title>
 
   <!-- External Libraries -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css" />
@@ -15,6 +15,7 @@
 <body>
 
   <div class="bg-glow"></div>
+  <div class="cyber-grid"></div>
 
   <!-- Theme Toggle -->
   <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
@@ -24,47 +25,64 @@
 
   <main class="grid" id="cardGrid">
 
-    <!-- ==================== PROFILE CARD ==================== -->
+    <!-- ==================== HERO / PROFILE CARD ==================== -->
     <div class="card profile-card">
       <div class="card-content">
         <div class="status-badge">
-          <span class="green-dot"></span> Open to work
+          <span class="green-dot"></span> Open to work · 24x7 Shifts
         </div>
-        <h1>Avnish Mishra</h1>
-        <h2>Cloud Engineer · Infrastructure & Automation</h2>
-        <p>
-          6+ months of experience in enterprise data centers. Skilled in VMware, Nutanix, 
-          Windows/Linux, AD, and cloud (AWS, Azure, GCP). Passionate about IaC and automation with Terraform.
+        <div class="hero-name">
+          <span class="hero-prefix">Hi, I'm</span>
+          <h1>Avnish <span class="gradient-text">Mishra</span></h1>
+        </div>
+        <h2 class="hero-title">
+          <i class="fa-solid fa-shield-halved"></i>
+          Cyber Security Analyst · SOC Operations
+        </h2>
+        <p class="hero-desc">
+          Infrastructure Support Engineer with 6+ months of hands-on experience in
+          <strong>IBM QRadar</strong> alert triage, log analysis, and incident response.
+          Skilled in <strong>AWS cloud security</strong>, endpoint protection (Checkpoint Harmony EDR),
+          and IAM/PAM solutions. Passionate about threat detection and cloud security automation.
         </p>
         <div class="location">
           <i class="fa-solid fa-location-dot"></i> Mumbai, India
         </div>
         <div class="profile-actions">
           <a href="mailto:avnishmishra154@gmail.com" class="btn-primary">
-            <i class="fa-regular fa-envelope"></i> Contact
+            <i class="fa-regular fa-envelope"></i> Contact Me
           </a>
-          <a href="#" class="btn-secondary">
-            <i class="fa-solid fa-file-pdf"></i> Resume
+          <a href="https://cybershield-ochre-gamma.vercel.app" target="_blank" class="btn-secondary">
+            <i class="fa-solid fa-shield-virus"></i> Live Project
           </a>
         </div>
       </div>
+      <div class="hero-radar">
+        <div class="radar-circle"></div>
+        <div class="radar-circle"></div>
+        <div class="radar-circle"></div>
+        <div class="radar-sweep"></div>
+      </div>
     </div>
 
-    <!-- ==================== SKILLS CARD ==================== -->
-    <div class="card skills-card">
-      <div class="card-content">
-        <h3><i class="fa-solid fa-code" style="color:var(--accent);margin-right:8px;"></i>Core Skills</h3>
-        <div class="skill-tags">
-          <span class="skill-tag"><i class="fa-brands fa-aws"></i> AWS</span>
-          <span class="skill-tag"><i class="fa-brands fa-microsoft"></i> Azure</span>
-          <span class="skill-tag"><i class="fa-brands fa-google"></i> GCP</span>
-          <span class="skill-tag"><i class="fa-solid fa-server"></i> VMware / Nutanix</span>
-          <span class="skill-tag"><i class="fa-solid fa-terminal"></i> Linux (RHEL/Ubuntu)</span>
-          <span class="skill-tag"><i class="fa-solid fa-code"></i> Python / Bash</span>
-          <span class="skill-tag"><i class="fa-solid fa-infinity"></i> Terraform</span>
-          <span class="skill-tag"><i class="fa-solid fa-shield"></i> IAM / Security</span>
-          <span class="skill-tag"><i class="fa-solid fa-database"></i> MySQL / PostgreSQL</span>
-          <span class="skill-tag"><i class="fa-solid fa-chart-line"></i> Monitoring (Splunk/Nagios)</span>
+    <!-- ==================== STATS CARD ==================== -->
+    <div class="card stats-card">
+      <div class="card-content stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">6+</div>
+          <div class="stat-label">Months Exp</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">VMs Managed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100+</div>
+          <div class="stat-label">Users Supported</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">70+</div>
+          <div class="stat-label">AV Engines</div>
         </div>
       </div>
     </div>
@@ -78,50 +96,96 @@
         <a href="https://linkedin.com/in/avnishmishra154" target="_blank" class="social-link">
           <i class="fa-brands fa-linkedin"></i><span>LinkedIn</span>
         </a>
-        <a href="tel:+919076393995" class="social-link">
-          <i class="fa-solid fa-phone"></i><span>Call</span>
+        <a href="mailto:avnishmishra154@gmail.com" class="social-link">
+          <i class="fa-solid fa-envelope"></i><span>Email</span>
         </a>
       </div>
     </div>
 
-    <!-- ==================== PROJECT 1 ==================== -->
+    <!-- ==================== SKILLS CARD ==================== -->
+    <div class="card skills-card">
+      <div class="card-content">
+        <h3><i class="fa-solid fa-shield-halved section-icon"></i>Security & SOC</h3>
+        <div class="skill-tags">
+          <span class="skill-tag"><i class="fa-solid fa-database"></i> IBM QRadar</span>
+          <span class="skill-tag"><i class="fa-solid fa-chart-line"></i> Splunk</span>
+          <span class="skill-tag"><i class="fa-solid fa-cloud"></i> Microsoft Sentinel</span>
+          <span class="skill-tag"><i class="fa-solid fa-bolt"></i> Alert Triage</span>
+          <span class="skill-tag"><i class="fa-solid fa-user-shield"></i> Incident Response</span>
+          <span class="skill-tag"><i class="fa-solid fa-file-shield"></i> Log Analysis</span>
+          <span class="skill-tag"><i class="fa-solid fa-bug"></i> Threat Detection</span>
+          <span class="skill-tag"><i class="fa-solid fa-fingerprint"></i> Checkpoint EDR</span>
+          <span class="skill-tag"><i class="fa-solid fa-key"></i> ARCON PIM/PAM</span>
+          <span class="skill-tag"><i class="fa-solid fa-user-lock"></i> IAM / Access Reviews</span>
+        </div>
+
+        <h3 class="mt-1"><i class="fa-solid fa-code section-icon"></i>Cloud & Tools</h3>
+        <div class="skill-tags">
+          <span class="skill-tag"><i class="fa-brands fa-aws"></i> AWS</span>
+          <span class="skill-tag"><i class="fa-solid fa-infinity"></i> Terraform</span>
+          <span class="skill-tag"><i class="fa-solid fa-lambda"></i> Lambda</span>
+          <span class="skill-tag"><i class="fa-solid fa-server"></i> API Gateway</span>
+          <span class="skill-tag"><i class="fa-solid fa-database"></i> S3 / DynamoDB</span>
+          <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
+          <span class="skill-tag"><i class="fa-solid fa-terminal"></i> Bash</span>
+          <span class="skill-tag"><i class="fa-brands fa-linux"></i> Linux (RHEL/Ubuntu)</span>
+          <span class="skill-tag"><i class="fa-brands fa-windows"></i> Windows</span>
+          <span class="skill-tag"><i class="fa-solid fa-network-wired"></i> TCP/IP · DNS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== PROJECT 1: CYBERSHIELD ==================== -->
+    <div class="card project-card featured-project">
+      <div class="card-content">
+        <div class="project-top">
+          <div class="icon-box featured-icon"><i class="fa-solid fa-shield-virus"></i></div>
+          <a href="https://github.com/avnishmishra154/Cybershield" target="_blank" class="project-link" title="View on GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <div class="featured-badge">⭐ Featured Project</div>
+        <h3>CyberShield — Real-Time Threat Detection</h3>
+        <p>
+          Full-stack URL threat scanner using <strong>VirusTotal API v3</strong> (70+ AV engines).
+          Serverless backend on <strong>AWS Lambda + API Gateway</strong>, with
+          <strong>S3</strong> for reports and <strong>DynamoDB</strong> for scan history.
+          Secured API keys with least-privilege IAM policies.
+        </p>
+        <div class="project-tags">
+          <span>AWS Lambda</span>
+          <span>API Gateway</span>
+          <span>S3 + DynamoDB</span>
+          <span>VirusTotal API</span>
+          <span>Python</span>
+          <span>JavaScript</span>
+          <span>Vercel</span>
+        </div>
+        <div class="project-actions">
+          <a href="https://cybershield-ochre-gamma.vercel.app" target="_blank" class="btn-primary small">
+            <i class="fa-solid fa-external-link-alt"></i> Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== PROJECT 2: TERRAFORM ==================== -->
     <div class="card project-card">
       <div class="card-content">
         <div class="project-top">
           <div class="icon-box"><i class="fa-solid fa-cloud"></i></div>
           <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
-        <h3>AWS Terraform Secure Webserver</h3>
+        <h3>AWS Secure Infrastructure with Terraform</h3>
         <p>
-          IaC deployment of highly available web server on AWS with VPC, ALB, auto-scaling, 
-          IAM least‑privilege, and encrypted storage.
+          IaC deployment of a highly available web server on AWS with VPC, ALB,
+          auto-scaling, IAM least-privilege policies, and encrypted storage.
         </p>
         <div class="project-tags">
           <span>Terraform</span>
-          <span>AWS (EC2, VPC, ALB)</span>
+          <span>AWS</span>
           <span>IAM</span>
           <span>Auto Scaling</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ==================== PROJECT 2 ==================== -->
-    <div class="card project-card">
-      <div class="card-content">
-        <div class="project-top">
-          <div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div>
-          <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-        <h3>Hybrid Cloud Automation</h3>
-        <p>
-          Automated VM provisioning and configuration management using Terraform &amp; Ansible 
-          across vSphere and AWS.
-        </p>
-        <div class="project-tags">
-          <span>Terraform</span>
-          <span>Ansible</span>
-          <span>vSphere</span>
-          <span>AWS</span>
         </div>
       </div>
     </div>
@@ -129,7 +193,7 @@
     <!-- ==================== EXPERIENCE CARD ==================== -->
     <div class="card exp-card">
       <div class="card-content">
-        <h3><i class="fa-solid fa-briefcase" style="color:var(--accent);margin-right:8px;"></i>Experience</h3>
+        <h3><i class="fa-solid fa-briefcase section-icon"></i>Experience</h3>
 
         <!-- Experience 1 -->
         <div class="exp-item">
@@ -137,26 +201,26 @@
             <span class="company">Megahertz Infotech Pvt. Ltd.</span>
             <span class="date">Feb 2026 – Present</span>
           </div>
-          <div class="exp-role">Infrastructure Support Engineer · Mumbai</div>
+          <div class="exp-role">Infrastructure Support Engineer · Client: Accenture</div>
           <ul class="exp-desc">
-            <li>Managed 70+ VMs on VMware/Nutanix with 99.9% uptime during Fortune 500 migration</li>
-            <li>Administered Active Directory for 500+ users with 100% SLA compliance</li>
-            <li>Supported Linux (RHEL, Ubuntu, SUSE) for service management and troubleshooting</li>
-            <li>Resolved TCP/IP, DNS, SSH issues to minimize application downtime</li>
+            <li>Monitored and triaged security alerts on <strong>IBM QRadar</strong>; reviewed logs to detect unauthorized access, malware signatures, and suspicious network traffic.</li>
+            <li>Documented security incidents in the incident management system, supporting SOC response workflows.</li>
+            <li>Configured firewall rules and network policies for secure inter-system communication.</li>
+            <li>Managed <strong>50+ Nutanix VMs</strong> using Prism — reduced downtime by 20% via proactive monitoring.</li>
           </ul>
         </div>
 
         <!-- Experience 2 -->
-        <div class="exp-item" style="border-bottom: none; margin-bottom:0; padding-bottom:0;">
+        <div class="exp-item last">
           <div class="exp-header">
             <span class="company">Digitide</span>
             <span class="date">Dec 2025 – Feb 2026</span>
           </div>
           <div class="exp-role">Desktop Support Engineer · Mumbai</div>
           <ul class="exp-desc">
-            <li>Provided desktop support for 200+ employees across hardware, software, and OS</li>
-            <li>Managed ServiceNow tickets maintaining 97% SLA adherence</li>
-            <li>Created knowledge base articles reducing resolution time by 20%</li>
+            <li>Supported <strong>100+ users</strong> with 95% first-contact resolution across hardware, software, and network issues.</li>
+            <li>Deployed security patches and system updates; maintained endpoint compliance.</li>
+            <li>Performed Windows/Linux troubleshooting, endpoint security support, and incident documentation.</li>
           </ul>
         </div>
       </div>
@@ -165,29 +229,25 @@
     <!-- ==================== EDUCATION + CERTIFICATIONS ==================== -->
     <div class="card edu-card">
       <div class="card-content">
-        <h3><i class="fa-solid fa-graduation-cap" style="color:var(--accent);margin-right:8px;"></i>Education &amp; Certifications</h3>
+        <h3><i class="fa-solid fa-graduation-cap section-icon"></i>Education & Certifications</h3>
 
-        <!-- Education -->
         <div class="edu-item">
           <div class="edu-row">
             <span class="edu-degree">B.Sc. Information Technology</span>
-            <span class="cgpa">CGPA: 8.3/10</span>
+            <span class="cgpa">CGPA 8.3/10</span>
           </div>
-          <div class="edu-college">Shaheed Dunichand Kalani College, Mumbai University</div>
+          <div class="edu-college">University of Mumbai</div>
           <div class="edu-year">2022 – 2025</div>
         </div>
 
-        <!-- Certifications -->
-        <div style="margin-top: 0.2rem;">
-          <div class="cert-row">
-            <span class="cert-badge"><i class="fa-solid fa-certificate" style="color:var(--accent);"></i> AWS Certified Cloud Practitioner</span>
-            <span class="cert-badge"><i class="fa-solid fa-certificate" style="color:var(--accent);"></i> Google Cloud Fundamentals</span>
-            <span class="cert-badge"><i class="fa-regular fa-lightbulb"></i> Generative AI</span>
-          </div>
-          <div class="cert-row" style="margin-top:0.4rem;">
-            <span class="cert-badge"><i class="fa-regular fa-clock"></i> Rotational shifts</span>
-            <span class="cert-badge"><i class="fa-regular fa-comment"></i> English · Hindi · Marathi</span>
-          </div>
+        <div class="cert-row">
+          <span class="cert-badge"><i class="fa-solid fa-certificate"></i> AWS Cloud Practitioner</span>
+          <span class="cert-badge"><i class="fa-solid fa-shield-halved"></i> SOC Analyst T1/T2</span>
+        </div>
+
+        <div class="cert-row mt-05">
+          <span class="cert-badge"><i class="fa-regular fa-clock"></i> Open to 24x7 Shifts</span>
+          <span class="cert-badge"><i class="fa-regular fa-comment"></i> English · Hindi · Marathi</span>
         </div>
       </div>
     </div>
